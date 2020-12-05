@@ -4,13 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "mongodb": "^3.6.3"
-  }
+    "mongodb": "^3.6.3",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crowntj07/Gamers-Games.git"
+  },
+  "bugs": {
+    "url": "https://github.com/crowntj07/Gamers-Games/issues"
+  },
+  "homepage": "https://github.com/crowntj07/Gamers-Games#readme"
 }
