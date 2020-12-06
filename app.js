@@ -5,9 +5,9 @@ const app = express();
 //Middleware
 //app.use(auth);
 
-app.use('/posts', () => {
-    console.log('Middleware is running');
-});
+//app.use('/posts', () => {
+  //  console.log('Middleware is running');
+//});
 
 
 
