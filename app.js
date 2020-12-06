@@ -3,10 +3,10 @@ const express = require('express')
 const app = express();
 
 //Middleware
+//app.use(auth);
+
 app.use('/posts', () => {
     console.log('Middleware is running');
-
-
 });
 
 
