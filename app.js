@@ -1,6 +1,7 @@
 const express = require('express')
 
 const app = express();
+const mongoose = require('mongoose')
 
 //Middleware
 //app.use(auth);
@@ -23,6 +24,9 @@ app.get('/posts', (req,res) => {
 
 });
 
+
+//Connect to DB
+mongoose.connect 
 
 
 
