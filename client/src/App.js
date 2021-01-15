@@ -1,34 +1,21 @@
+import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import Loginscreen from './Loginscreen'
-import React, { Component } from 'react';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
-
-class App extends Component {
-  constructor(props){
-    super(props);
-    this.state={
-      loginPage:[],
-      uploadScreen:[]
-    }
-  }
-  componentWillMount(){
-    var loginPage =[];
-    loginPage.push(<Loginscreen parentContext={this}/>);
-    this.setState({
-                  loginPage:loginPage
-                    })
-  }
-  render() {
-    return (
-      <div className="App">
-        {this.state.loginPage}
-        {this.state.uploadScreen}
-      </div>
-    );
-  }
+import { Route, Switch, BrowserRouter as Router } from 'react router-dom';
+import Login from './Pages/Login'
+import NotFound from './Pages/NotFound'
+import Register from './Pages/Register'
+import Dashboard from './Pages/Dashboard'
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Dashboard} />
+        <Route path="/login" component={Login} />
+        <Route path="/register" component={Register} />
+        <Route component={NotFound} />
+      </Switch>
+    </Router>
+  );
 }
-const style = {
-  margin: 15,
-};
 export default App;
