@@ -1,42 +1,23 @@
-import React from 'react';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
-import Login from "./components/login.component";
-import SignUp from "./components/signup.component";
-import TopGames from "./TopGames"
-
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import TopGames from "./TopGames";
+import Search from "./Search";
+import Nav from "./Nav";
+import GameDetail from "./GameDetail";
 
 function App() {
-  return (<Router>
-    <div className="App">
-      <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-        <div className="container">
-          <Link className="navbar-brand" to={"/sign-in"}></Link>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to={"/sign-in"}>Login</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div className="auth-wrapper">
-        <div className="auth-inner">
-          <Switch>
-            <Route exact path='/' component={Login} />
-            <Route path="/sign-in" component={Login} />
-            <Route path="/sign-up" component={SignUp} />
-          </Switch>
-        </div>
+  
+  return (
+    <Router>
+      <div className="App">
+        <Nav />
+        <Switch>
+          <Route exact path='/topgames' component={TopGames} />
+          <Route exact path='/search' component={Search} />
+          <Route path='/game/:name' component={GameDetail} />
+        </Switch>
       </div>
-    </div></Router>
+    </Router>
   );
 }
 
