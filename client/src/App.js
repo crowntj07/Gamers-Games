@@ -1,21 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Route, Switch, BrowserRouter as Router } from 'react router-dom';
-import Login from './Pages/Login'
-import NotFound from './Pages/NotFound'
-import Register from './Pages/Register'
-import Dashboard from './Pages/Dashboard'
+
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Dashboard} />
-        <Route path="/login" component={Login} />
-        <Route path="/register" component={Register} />
-        <Route component={NotFound} />
-      </Switch>
-    </Router>
+    <div className="App">
+      <h3>Build Sign Up & Login UI Template in React</h3>
+    </div>
   );
 }
+
 export default App;
