@@ -5,6 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Button from "./Button";
 
+import "./styles.css";
+
+class App extends React.Component {
+  state = { isSaving: false };
+  handleOnClick = () => {
+    this.setState({ isSaving: !this.state.isSaving });
+  };
+
+
 
 ReactDOM.render(
   <React.StrictMode>
