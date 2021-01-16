@@ -3,29 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Button from "./Button";
 
-import "./styles.css";
-
-class App extends React.Component {
-  state = { isSaving: false };
-  handleOnClick = () => {
-    this.setState({ isSaving: !this.state.isSaving });
-  };
-
-  render() {
-    const { isSaving } = this.state;
-    return (
-      <div className="App">
-        <Button isSaving={isSaving} onClick={this.handleOnClick} />
-      </div>
-    );
-  }
-}
-
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
 ReactDOM.render(
   <React.StrictMode>
     <App />
