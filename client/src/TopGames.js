@@ -13,7 +13,11 @@ const TopGames = () => {
   const fetchGames = () => {
     fetch('https:////api.rawg.io/api/games?dates=2019-10-10,2020-10-10&ordering=-added')
     .then(resp => resp.json())
-    .then(({results}) => setGames(results))
+    .then(({results}) => {
+      setGames(results)
+      console.log(games)
+    } 
+    )
   }
 
   return (
