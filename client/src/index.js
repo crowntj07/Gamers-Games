@@ -13,6 +13,15 @@ class App extends React.Component {
     this.setState({ isSaving: !this.state.isSaving });
   };
 
+  render() {
+    const { isSaving } = this.state;
+    return (
+      <div className="App">
+        <Button isSaving={isSaving} onClick={this.handleOnClick} />
+      </div>
+    );
+  }
+}
 
 
 ReactDOM.render(
