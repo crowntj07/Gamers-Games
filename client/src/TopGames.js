@@ -11,7 +11,7 @@ const TopGames = () => {
   const [games, setGames] = useState([])
 
   const fetchGames = () => {
-    fetch('https://rawg.io/api/collections/must-play/games')
+    fetch('https:////api.rawg.io/api/games?dates=2019-10-10,2020-10-10&ordering=-added')
     .then(resp => resp.json())
     .then(({results}) => setGames(results))
   }
