@@ -24,6 +24,8 @@ class App extends React.Component {
 }
 
 
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 ReactDOM.render(
   <React.StrictMode>
     <App />
