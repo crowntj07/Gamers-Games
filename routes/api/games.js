@@ -5,3 +5,6 @@ const gamesController = require("../../controller/gamesController");
 router.route("/")
   .get(gamesController.findAll)
   .post(gamesController.create);
+
+
+  module.exports = router;
