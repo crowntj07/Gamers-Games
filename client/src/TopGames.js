@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom'
 import API from './utils/API';
 
 
+
 const TopGames = () => {
 
   useEffect(() => {
     fetchGames()
   },[])
-
+  
   const [games, setGames] = useState([])
 
   const fetchGames = () => {
