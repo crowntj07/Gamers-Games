@@ -5,6 +5,7 @@ import TopGames from "./TopGames";
 import Search from "./Search";
 import Nav from "./Nav";
 import GameDetail from "./GameDetail";
+import SaveGame from "./SaveGame";
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
         <Switch>
           <Route exact path='/topgames' component={TopGames} />
           <Route exact path='/search' component={Search} />
+          <Route exact path='/savegame' component={SaveGame} />
           <Route path='/game/:name' component={GameDetail} />
         </Switch>
       </div>
