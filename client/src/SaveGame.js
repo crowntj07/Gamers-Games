@@ -8,7 +8,7 @@ function SaveGame() {
     const [games, setGames] = useState([])
     const [formObject, setFormObject] = useState({})
   
-    // Load all books and store them with setBooks
+    // Load all game and store them with setBooks
     useEffect(() => {
       API.getGames().then(function(res){
           setGames(res.data)
