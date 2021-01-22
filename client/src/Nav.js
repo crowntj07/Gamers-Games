@@ -11,10 +11,11 @@ const Nav = () => {
     <nav>
       <ul className='nav-links'>
         <Link style={navStyle} to={'/topgames'}>
-        <li>Top Games</li>
+        <li>Must Play Games</li>
         </Link>
         <Link style={navStyle} to={'/search'}>
         <li>Search</li>
+        <br></br>
         <Link style={navStyle} to={'/savegame'}>
         <li>SaveGame</li>
         </Link>

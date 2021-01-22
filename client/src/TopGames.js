@@ -4,6 +4,7 @@ import API from './utils/API';
 
 
 
+
 const TopGames = () => {
 
   useEffect(() => {
@@ -13,7 +14,7 @@ const TopGames = () => {
   const [games, setGames] = useState([])
 
   const fetchGames = () => {
-    fetch('https:////api.rawg.io/api/games?dates=2019-10-10,2020-10-10&ordering=-added')
+    fetch('https:////api.rawg.io/api/games?dates=2020-10-10,2021-10-10&ordering=-added')
     .then(resp => resp.json())
     .then(({results}) => { setGames(results)
       console.log(games)

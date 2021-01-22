@@ -1,6 +1,6 @@
 body {
-  background-image: url("assets/images/gamingimage.jpg");
- background-color: #cccccc;
+  /* background-image: url("assets/images/box.jpg"); */
+ background-color: rgb(128, 101, 101);
   margin: 0;
   font-family: fantasy;
   -webkit-font-smoothing: antialiased;
@@ -18,10 +18,10 @@ code {
 img.bg {
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 1024px;
+  min-width: 1080px;
 	
   /* Set up proportionate scaling */
-  width: 100%;
+  width: 50%;
   height: auto;
 	
   /* Set up positioning */
