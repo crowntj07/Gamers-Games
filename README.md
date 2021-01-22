@@ -10,22 +10,22 @@ In this app users can search for their favorite games find out the rating, year 
 
 # Technologies Used
 
-REACT JS
-MONGO DB
-RAWG
-Express.js
-Bootstrap
-Node.js
+* REACT JS
+* MONGO DB
+* RAWG
+* Express.js
+* Bootstrap
+* Node.js
 
 # Future Development
 
-Passport
+* Passport
 
-Adding Animation and more design to the app
+* Adding Animation and more design to the app
 
-Login Screen
+* Login Screen
 
-Adding a page where user can find their favorite game at
+* Adding a page where user can find their favorite game at
 Local Store
 
 # Sceenshots
