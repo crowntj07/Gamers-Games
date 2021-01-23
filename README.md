@@ -3,7 +3,7 @@ https://guarded-harbor-95979.herokuapp.com/topgames
 
 # User Story
 
-This app was build and made by gamers! Users can used this app the search for the Must Play Games. They can get the rating, released date and the platform that the game is on! If the users dont want to play the must play game they can also search for their favorite games. If the users finds a game they like they can add it can saved it and add it to their backlogged! 
+This app was built and made by gamers! Users can use this app the search for the must play games. They can get the rating, release date and the platform that the game is on! If the users don't want to play the most popular games they can also search for their favorite games. If the users find a game they like they can saved it and add it to their backlog! 
 
 # Concept
 
