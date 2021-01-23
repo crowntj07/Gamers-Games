@@ -1,4 +1,4 @@
-# Games by Gamers
+# Gamers Search Engine
 https://guarded-harbor-95979.herokuapp.com/topgames
 
 # User Story
